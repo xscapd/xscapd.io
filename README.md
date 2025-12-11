@@ -1,2 +1,2 @@
-# xscapd.io
-Repository for xscapd.io website.
+# Description
+This repository contains the code for the [xscapd.io](https://xscapd.io) cybersecurity blog website.
