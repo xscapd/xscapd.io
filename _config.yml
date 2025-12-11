@@ -54,3 +54,4 @@ plugins:
 collections:
   videos:
     output: true
+    permalink: /videos/:year/:month/:day/:title:output_ext
