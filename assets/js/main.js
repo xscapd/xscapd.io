@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
 	let fadeTarget = document.getElementById("loadOverlay")
 	let fadeEffect = setInterval(function () {
 		if (!fadeTarget.style.opacity) {
