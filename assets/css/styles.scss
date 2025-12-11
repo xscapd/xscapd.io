@@ -21,6 +21,10 @@ a {
     box-shadow: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #loadOverlay {
   background: white;
   position: fixed;
