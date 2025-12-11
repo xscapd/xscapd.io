@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	document.getElementById("navMenu").style.visibility = "visible"
 	document.getElementById("pageBody").style.overflow = "visible"
+	document.getElementById("pageInnerBody").style.visibility = "visible"
 
 })
 
