@@ -2,12 +2,17 @@
 ---
 @use "base";
 
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
 a {
   text-decoration: none;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 svg {
