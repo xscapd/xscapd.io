@@ -18,13 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: xscapd Cybersecurity Blog 
-email: xscapd@gmail.com
-description: xscapd cybersecurity blog.
+title: xscapd 
+email: mail@xscapd.io
+description: just another cybersecurity blog
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://xscapd.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: xscapd 
-github_username:  xscapd 
 
 # Build settings
 plugins:

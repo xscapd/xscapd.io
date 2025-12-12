@@ -4,8 +4,8 @@
 		<meta charset="utf-8">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="xscapd cybersecurity blog.">
-		<title>{{ page.title }}</title>
+		<meta name="description" content="{{ site.description }}">
+		<title>{{ site.title }}</title>
 		<link rel="icon" type="image/x-icon" href="favicon.svg">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,6 @@
 		<!-- Loading overlay -->
 		<div id="loadOverlay" class="overlay d-flex justify-content-center">
 			<div style="width: 50%; margin: auto;">
-				<!--<img src="/assets/images/xscapd-logo.png" alt="xscapd logo." class="mb-4" style="max-width: 30%">-->
 				<br>
 				<div class="spinner-border" role="status"></div>
 			</div>
@@ -78,7 +77,7 @@
 				<!-- Contact -->
 				<div id="Contact" class="container px-0 mt-5 pb-5">
 					<h1 class="display-5 text-start mt-5">Contact</h1>
-					<h4 class="text-muted"><a href="mailto:xscapd@gmail.com">xscapd@gmail.com</a></h4>
+					<h4 class="text-muted"><a href="mailto:{{ site.email }}">{{ site.email }}</a></h4>
 				</div>
 			</div>
 
