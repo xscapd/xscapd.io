@@ -8,12 +8,12 @@
 		<!-- Loading overlay -->
 		{% include overlay.html %}
 
-		<div id="pageInnerBody" style="visibility: hidden">
+		<div id="pageInnerBody" class="pt-5" style="visibility: hidden">
 			<div class="container">
 				{% include nav.html %}
 			</div>
 
-			<div class="container post article-container">
+			<div class="container post pt-5 article-container">
 				<h1 class="display-4 text-start">{{ page.title }}</h1>
 				<p class="text-muted">{{ page.date | date: "%Y-%m-%d" }}</p>
 
