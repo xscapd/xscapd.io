@@ -4,9 +4,6 @@
 
 
 
-* {
-  font-family: "Open Sans", sans-serif;
-}
 
 a {
   text-decoration: none;
@@ -54,4 +51,11 @@ svg {
 }
 
 iframe {
+}
+
+pre {
+  overflow: auto;
+  max-width: 100%;
+  padding: 1.6em;
+  background-color: #f2f2f2;
 }
