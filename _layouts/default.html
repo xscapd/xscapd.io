@@ -1,43 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="{{ site.description }}">
-		<title>{{ site.title }}</title>
-		<link rel="icon" type="image/x-icon" href="favicon.svg">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-		<link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css " rel="stylesheet">
-		<link rel="stylesheet" href="/assets/css/styles.css">
-
-		<!-- Matomo -->
-		<script>
-			var _paq = window._paq = window._paq || [];
-			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-			_paq.push(['trackPageView']);
-			_paq.push(['enableLinkTracking']);
-			(function() {
-				var u="https://xscapd.matomo.cloud/";
-				_paq.push(['setTrackerUrl', u+'matomo.php']);
-				_paq.push(['setSiteId', '1']);
-				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-				g.async=true; g.src='https://cdn.matomo.cloud/xscapd.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-			})();
-		</script>
-		<!-- End Matomo Code -->
-
+		{% include head.html %}
 	</head>
 	<body id="pageBody" style="overflow: hidden;">
 		<!-- Loading overlay -->
-		<div id="loadOverlay" class="overlay d-flex justify-content-center">
-			<div style="width: 50%; margin: auto;">
-				<br>
-				<div class="spinner-border" role="status"></div>
-			</div>
-		</div>
+		{% include overlay.html %}
+
 		<div id="pageInnerBody" style="visibility: hidden">
 			<div class="container">
 				{% include nav.html %}
@@ -100,8 +69,6 @@
 
 		</div>
 
-
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
-		<script src="/assets/js/main.js"></script>
+		{% include scripts.html %}
 	</body>
 </html>
