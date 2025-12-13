@@ -1,6 +1,6 @@
 ---
 layout: videos 
 title: Here is a cool video
-description: This is a super cool video you should watch.."
+description: This is a super cool video you should watch..
+video_url: https://www.youtube.com/watch?v=0fPQ1lNAUbY
 ---
-heyyy

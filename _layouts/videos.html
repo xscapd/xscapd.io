@@ -1,6 +1,25 @@
----
-layout: videos 
----
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                {% include head.html %}
+        </head>
 
-<h1>{{ title }}</h1>
-{{ content }}
+        <body id="pageBody" style="overflow: hidden;">
+                <!-- Loading overlay -->
+                {% include overlay.html %}
+
+                <div id="pageInnerBody" style="visibility: hidden">
+                        <div class="container m-5 p-3">
+                                {% include nav.html %}
+                        </div>
+
+			<div class="container">
+				<iframe src="https://www.youtube.com/embed/0fPQ1lNAUbY"></iframe>
+				<h1 class="display-4">{{ page.title  }}</h1>
+			</div>
+
+			{% include scripts.html %}
+
+		</div>
+	</body>
+</html>
