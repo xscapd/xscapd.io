@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-                {% include head.html %}
-        </head>
+	<head>
+		{% include head.html %}
+	</head>
 
-        <body id="pageBody" style="overflow: hidden;">
-                <!-- Loading overlay -->
-                {% include overlay.html %}
+	<body id="pageBody" style="overflow: hidden;">
+		<!-- Loading overlay -->
+		{% include overlay.html %}
 
-                <div id="pageInnerBody" style="visibility: hidden">
-                        <div class="container m-5 p-3">
-                                {% include nav.html %}
-                        </div>
+		<div id="pageInnerBody" style="visibility: hidden">
+			<div class="container m-5 p-3">
+				{% include nav.html %}
+			</div>
 
-			<div class="container">
-				<iframe src="https://www.youtube.com/embed/0fPQ1lNAUbY"></iframe>
+			<div class="container video-container">
+
+				<div class="ratio ratio-16x9">
+					<iframe height="100%" width="100%" src="{{ page.video_url }}" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+
 				<h1 class="display-4">{{ page.title  }}</h1>
+				<p class="text-muted">{{ page.date | date: "%Y-%m-%d"  }}</p>
 			</div>
 
 			{% include scripts.html %}
-
+			
+			<div class="container px-5">
+				<div class="row gx-5">
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
